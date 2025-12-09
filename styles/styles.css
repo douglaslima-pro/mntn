@@ -290,3 +290,108 @@ footer small {
     padding: 0;
     text-decoration: none;
 }
+
+/* desktop size */
+@media screen and (max-width: 992px) {
+    .content .section .section-text {
+        flex: 1;
+    }
+
+    .content .section .section-picture {
+        flex: 1;
+    }
+}
+
+/* tablet size */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    header nav,
+    header .account-link {
+        display: none;
+    }
+
+    .background-layer {
+        background-position: 25% top;
+    }
+
+    .start section {
+        padding: 0 1rem;
+    }
+
+    .start .social-media {
+        bottom: 0;
+        flex-direction: row;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .start .social-media p {
+        writing-mode: initial;
+    }
+
+    .content .section,
+    .content .section#section2 {
+        flex-direction: column-reverse;
+        height: auto;
+        max-height: unset;
+    }
+
+    .content .section .section-text {
+        left: unset;
+        padding-left: 4rem;
+    }
+
+    .content .section .section-text .section-text-label {
+        font-size: 10rem;
+        top: 0;
+    }
+
+    .content .section .section-picture {
+        background-position: bottom center;
+        flex: unset;
+        height: 400px;
+    }
+
+    .content .section#section2 .section-picture {
+        background-position: center center;
+    }
+
+    footer .footer-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer .footer-wrapper .footer-links h3 {
+        margin-bottom: 1rem;
+    }
+}
+
+/* mobile size */
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    header {
+        padding: 2rem 1rem 0 1rem;
+    }
+
+    .highlight {
+        font-size: .8rem;
+    }
+
+    .content .section .section-text .section-text-label {
+        font-size: 7rem;
+    }
+
+    .content .section .section-picture {
+        height: 200px;
+    }
+}
