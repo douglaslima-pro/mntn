@@ -1,0 +1,292 @@
+@import url('./fonts.css');
+
+body {
+    background-image: url('../assets/images/HG.png');
+    background-size: cover;
+    background-position: bottom center;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+
+p,
+a,
+small {
+    font-family: 'Gilroy Medium';
+    font-size: 1rem;
+}
+
+p {
+    line-height: 1.5rem;
+    margin: 1rem 0;
+}
+
+h1,
+h2 {
+    font-family: 'Chronicle Display Semibold';
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.logo {
+    color: white;
+    font-family: 'Chronicle Display Black';
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.highlight {
+    align-items: center;
+    color: #FBD784;
+    display: flex;
+    font-family: 'Gilroy Medium';
+    font-size: 1rem;
+    font-weight: bold;
+    gap: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.highlight span {
+    background-color: #FBD784;
+    height: 2px;
+    width: 50px;
+}
+
+main {
+    background-image: url('../assets/images/BG\ Hero.png');
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* site header */
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 0 2rem;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li:hover a {
+    font-weight: bold;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 10px 15px;
+}
+
+header .account-link {
+    padding: 10px 15px;
+    transition: all .2s ease-in-out;
+}
+
+header .account-link:hover {
+    background-color: #0b1d2675;
+}
+
+/* first section */
+.start {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.start section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.start .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    left: 1rem;
+    position: absolute;
+}
+
+.start .social-media p {
+    margin: 0;
+    writing-mode: vertical-lr;
+}
+
+/* parallax */
+.background-layer {
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    transform-origin: top center;
+    width: 100%;
+}
+
+.background-layer-1 {
+    background-image: url('../assets/images/MG.png');
+}
+
+.background-layer-2 {
+    background-image: url('../assets/images/VG.png');
+    margin-top: -50vh;
+}
+
+.parallax {
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+
+.parallax-container {
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: -1;
+}
+
+.parallax .parallax-1 {
+    transform: translateZ(-1px) scale(2);
+}
+
+.parallax .parallax-2 {
+    transform: translateZ(-2px) scale(3);
+}
+
+.parallax .parallax-3 {
+    transform: translateZ(-3px) scale(4);
+}
+
+/* site content */
+.content {
+    background-image: linear-gradient(180deg, transparent, #0B1D26 15%);
+    margin-top: -15vh;
+    padding: 0 1rem 1rem 1rem;
+    position: relative;
+    z-index: 100;
+}
+
+.content .section {
+    align-items: stretch;
+    display: flex;
+    gap: 50px;
+    height: 100vh;
+    margin-bottom: 20vh;
+    max-height: 600px;
+    max-width: 1200px;
+}
+
+.content .section#section2 {
+    flex-direction: row-reverse;
+}
+
+.content .section .section-text {
+    align-items: center;
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    padding-left: 8rem;
+    position: relative;
+}
+
+.content .section .section-text .section-text-label {
+    color: #ffffff41;
+    font-family: 'Gilroy Medium';
+    font-size: 13rem;
+    font-weight: bold;
+    left: 0;
+    position: absolute;
+    top: 5%;
+    z-index: -1;
+}
+
+.content .section .section-text .section-text-wrapper p {
+    max-width: 600px;
+}
+
+.content .section .section-text .section-text-wrapper a {
+    color: #FBD784;
+}
+
+.content .section#section1 .section-picture {
+    background-image: url('../assets/images/01.png');
+}
+
+.content .section#section2 .section-picture {
+    background-image: url('../assets/images/02.png');
+}
+
+.content .section#section3 .section-picture {
+    background-image: url('../assets/images/03.png');
+}
+
+.content .section .section-picture {
+    background-position: top center;
+    background-size: cover;
+    flex: 2;
+}
+
+/* footer */
+footer .footer-wrapper {
+    align-items: start;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+footer .footer-wrapper .footer-text {
+    flex: 4;
+}
+
+footer .footer-wrapper .footer-links {
+    flex: 1;
+}
+
+footer .footer-wrapper .footer-links h3 {
+    color: #FBD784;
+    font-family: 'Gilroy Medium';
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+footer .footer-wrapper .footer-links ul li {
+    padding: .75rem 0;
+}
+
+footer .footer-wrapper .footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+footer small {
+    color: #ffffff41;
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}

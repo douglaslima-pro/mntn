@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Chronicle Display Black';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/chronicle-display/Chronicle\ Display\ Black.otf');
+}
+
+@font-face {
+    font-family: 'Chronicle Display Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/chronicle-display/Chronicle\ Display\ Semibold.otf');
+}
+
+@font-face {
+    font-family: 'Gilroy Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/gilroy-bold/Gilroy-Medium.ttf');
+}
