@@ -182,7 +182,7 @@ header .account-link:hover {
 
 /* site content */
 .content {
-    background-image: linear-gradient(180deg, transparent, #0B1D26 15%);
+    background-image: linear-gradient(180deg, transparent, #0B1D26 7%);
     margin-top: -15vh;
     padding: 0 1rem 1rem 1rem;
     position: relative;
