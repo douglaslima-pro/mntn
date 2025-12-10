@@ -197,6 +197,7 @@ header .account-link:hover {
     margin-bottom: 20vh;
     max-height: 600px;
     max-width: 1200px;
+    overflow: hidden;
 }
 
 .content .section#section2 {
@@ -302,6 +303,16 @@ footer small {
     }
 }
 
+@media screen and (min-width: 769px) {
+    .content .section.hide > * {
+        transform: translateY(100%);
+    }
+
+    .content .section.show > * {
+        animation: slideUp 1s normal;
+    }
+}
+
 /* tablet size */
 @media screen and (max-width: 768px) {
     h1 {
@@ -337,6 +348,14 @@ footer small {
         flex-direction: column-reverse;
         height: auto;
         max-height: unset;
+    }
+    
+    .content .section.hide > * {
+        transform: translateX(100%);
+    }
+
+    .content .section.show > * {
+        animation: slideLeft 1s normal;
     }
 
     .content .section .section-text {
@@ -393,5 +412,30 @@ footer small {
 
     .content .section .section-picture {
         height: 200px;
+    }
+}
+
+/* animations */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%)
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%)
     }
 }
